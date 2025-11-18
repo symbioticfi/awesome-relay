@@ -2,7 +2,7 @@
 
 > Curated resources for the Symbiotic Relay — a distributed middleware mesh that derives validator sets, aggregates BLS (optionally ZK-compressed) signatures, and commits proofs across multiple settlement chains so any protocol can inherit stake-backed security without bootstrapping its own validator set.
 
-Relay nodes form a libp2p GossipSub network where each instance can act as a **Signer**, **Aggregator**, **Committer**, **Observer**, or a full node running every role. Validator sets are sourced from on-chain VotingPowerProvider + KeyRegistry modules, signals keep subsystems decoupled, and proofs are submitted to chain-specific Settlement contracts.
+Relay effectively acts as a universal attestation fabric: operators plug in to stake-backed validator set, sign outcomes, and have those results automatically gathered, and aggregatation proof is generated. Later aggregation proof can be verified on any EVM the chain where applications live. Whether you run a single lightweight client or a full stack of signer/aggregator/committer roles, Relay abstracts the validator choreography so products can focus on their business logic while Relay handles security guarantees end to end.
 
 ---
 
@@ -17,7 +17,6 @@ Relay nodes form a libp2p GossipSub network where each instance can act as a **S
 - [Examples & Tutorials](#examples--tutorials)
 - [ZK Circuits & Cryptography](#zk-circuits--cryptography)
 - [Ecosystem & Community](#ecosystem--community)
-- [Quick Commands](#quick-commands)
 
 ---
 
@@ -112,26 +111,6 @@ Relay nodes form a libp2p GossipSub network where each instance can act as a **S
 - [DeepWiki badges](https://deepwiki.com/symbioticfi/) – each Symbiotic repo exposes a DeepWiki badge linking to living architecture notes.
 - Open-source contributions follow [`CONTRIBUTING.md`](https://github.com/symbioticfi/relay/blob/main/CONTRIBUTING.md) – branching strategy, lint/test requirements, PR etiquette.
 
----
 
-## Quick Commands
-
-```bash
-# Build local binaries (macOS arm64 example)
-make build-relay-sidecar OS=darwin ARCH=arm64
-make build-relay-utils  OS=darwin ARCH=arm64
-
-# Run with YAML config + HTTP gateway enabled
-./bin/relay_sidecar --config config.yaml --api.http-gateway=true
-
-# Launch automated dockerized network with custom topology
-OPERATORS=6 AGGREGATORS=2 COMMITERS=2 make local-setup
-
-# Pull latest Docker image
-docker pull symbioticfi/relay:latest
-docker run -v $(pwd)/config.yaml:/config.yaml symbioticfi/relay:latest --config /config.yaml
-```
-
----
 
 Missing a great Relay resource? Open an issue or PR so the ecosystem’s awesome list stays up to date. 🚀
