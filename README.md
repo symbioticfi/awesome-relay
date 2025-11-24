@@ -94,7 +94,8 @@ Relay effectively acts as a universal attestation fabric: operators plug in to s
 
 ## Examples & Tutorials
 - [Symbiotic Super Sum](https://github.com/symbioticfi/symbiotic-super-sum) – end-to-end task network with Docker Compose, multiple relay sidecars, Anvil settlement chains, and sum nodes. Includes scripts to generate configs, run tasks via Foundry `cast`, and monitor logs.
-- [symbioticfi/cosmos-relay-sdk](https://github.com/symbioticfi/cosmos-relay-sdk) – Cosmos SDK `SimApp` that replaces native staking/slashing with Symbiotic modules; supports both mock relay clients (JSON key files) and real sidecar RPCs.
+- [Cosmos SDK + Relay](https://github.com/symbioticfi/cosmos-relay-sdk) – Cosmos SDK `SimApp` that replaces native staking/slashing with Symbiotic modules; supports both mock relay clients (JSON key files) and real sidecar RPCs.
+- [Flight delays insurance](https://github.com/symbioticfi/symbiotic-flight-delays) - Simple flight delays insurance on-chain. Project implements flights oracle and on-chain insurance claims using Relay as attestation layer.
 - DeepWiki subsections *Deployment Patterns* & *Troubleshooting Guide* – cover operational gotchas (port conflicts, syncing, chain RPC saturation).
 - [Docs “Try Relay” flow](https://docs2.symbiotic.fi/get-started/) – click-through tutorial for wiring the Relay SDK beta, guiding users through staking operators and finalizing cross-chain messages.
 
