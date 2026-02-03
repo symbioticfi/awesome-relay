@@ -21,9 +21,9 @@ Relay effectively acts as a universal attestation fabric: operators plug in to s
 ---
 
 ## About Relay
-- **Symbiotic Relay overview** – [docs2.symbiotic.fi/get-started](https://docs2.symbiotic.fi/get-started/) explains how the Relay SDK plugs into Symbiotic’s shared-security marketplace so bridges, oracles, rollups, and AI/compute networks can codify custom slashing + rewards and verify outcomes anywhere.
-- **DeepWiki article** – [deepwiki.com/symbioticfi/relay](https://deepwiki.com/symbioticfi/relay) documents node roles, signal-based architecture, repository structure, API surface, deployment modes, and troubleshooting guidance.
-- **Use cases** – official docs highlight attestation networks, cross-chain messaging, oracle/data feeds, cloud & compute coordination, and liquidity/security routing as first-class scenarios.
+- [**What is Relay**](https://docs.symbiotic.fi/get-started/what/relay) – explains how the Relay SDK plugs into Symbiotic’s shared-security marketplace so bridges, oracles, rollups, and AI/compute networks can codify custom slashing + rewards and verify outcomes anywhere.
+- [**DeepWiki article**](https://deepwiki.com/symbioticfi/relay) – documents node roles, signal-based architecture, repository structure, API surface, deployment modes, and troubleshooting guidance.
+- [**Use cases**](https://docs.symbiotic.fi/get-started/use-cases) – official docs highlight attestation networks, cross-chain messaging, oracle/data feeds, cloud & compute coordination, and liquidity/security routing as first-class scenarios.
 
 ---
 
@@ -97,7 +97,7 @@ Relay effectively acts as a universal attestation fabric: operators plug in to s
 - [Cosmos SDK + Relay](https://github.com/symbioticfi/cosmos-relay-sdk) – Cosmos SDK `SimApp` that replaces native staking/slashing with Symbiotic modules; supports both mock relay clients (JSON key files) and real sidecar RPCs.
 - [Flight delays insurance](https://github.com/symbioticfi/symbiotic-flight-delays) - Simple flight delays insurance on-chain. Project implements flights oracle and on-chain insurance claims using Relay as attestation layer.
 - DeepWiki subsections *Deployment Patterns* & *Troubleshooting Guide* – cover operational gotchas (port conflicts, syncing, chain RPC saturation).
-- [Docs “Try Relay” flow](https://docs2.symbiotic.fi/get-started/) – click-through tutorial for wiring the Relay SDK beta, guiding users through staking operators and finalizing cross-chain messages.
+- [Docs “Try Relay” flow](https://docs.symbiotic.fi/get-started/developers/relay-quickstart) – click-through tutorial for wiring the Relay SDK beta, guiding users through staking operators and finalizing cross-chain messages.
 
 ---
 
@@ -108,7 +108,7 @@ Relay effectively acts as a universal attestation fabric: operators plug in to s
 ---
 
 ## Ecosystem & Community
-- [Symbiotic Docs Portal](https://docs2.symbiotic.fi/) – entry point for Learn/Integrate/Try flows, points program, analytics, audit references, and social channels (Discord, Telegram, X).
+- [Symbiotic Docs Portal](https://docs.symbiotic.fi/) – entry point for Learn/Integrate/Try flows, points program, analytics, audit references, and social channels (Discord, Telegram, X).
 - [DeepWiki badges](https://deepwiki.com/symbioticfi/) – each Symbiotic repo exposes a DeepWiki badge linking to living architecture notes.
 - Open-source contributions follow [`CONTRIBUTING.md`](https://github.com/symbioticfi/relay/blob/main/CONTRIBUTING.md) – branching strategy, lint/test requirements, PR etiquette.
 
